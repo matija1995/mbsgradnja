@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.B.S. Gradnja | Građevinski Projekti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="company-name">M.B.S. Gradnja</div>
+            <nav class="nav-links">
+                <a href="#about">O Nama</a>
+                <a href="#services">Usluge</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="slike/slika1.jpg" class="active" alt="Project 1">
+            <img src="slike/slika10.jpg" alt="Project 2">
+            <img src="slike/slika8.jpg" alt="Project 3">
+            <img src="slike/slika22.jpg" alt="Project 4">
+            <img src="slike/slika4.jpg" alt="Project 5">
+            <img src="slike/slika3.jpg" alt="Project 6">
+            <img src="slike/slika04.jpg" alt="Project 7">
+            
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="slike/slika9.jpg" alt="Foundation Icon" style="width: 100%;">
+            <h3>Od temelja do krova</h3>
+            <p>Gradimo vaš dom od temelja do krova s visokom preciznošću i stručnom izvedbom.</p>
+        </div>
+        <div class="feature">
+            <img src="slike/slika16.jpg" alt="Materials Icon">
+            <h3>Kvalitetni materijali</h3>
+            <p>Kvalitetni i izdržljivi materijali koji garantiraju trajnost i stabilnost svakog projekta.</p>
+        </div>
+        <div class="feature">
+            <img src="slike/slika121.jpg" alt="Clients Icon">
+            <h3>Zadovoljni klijenti</h3>
+            <p>Naša misija je zadovoljstvo klijenata, a to ostvarujemo profesionalnim pristupom.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Naše Usluge</h2>
+
+        <div class="service-item">
+            <div class="service-text">
+                <h3>Građevinski Radovi</h3>
+                <p>Visokokvalitetni građevinski radovi za sve vrste projekata.</p>
+            </div>
+            <img src="slike/slika9.jpg" alt="Građevinski Radovi">
+        </div>
+
+        <div class="service-item reverse">
+            <img src="slike/slika8.jpg" alt="Roh-Bau">
+            <div class="service-text">
+                <h3>Roh-Bau</h3>
+                <p>Stručna izvedba roh-bau projekta prema najvišim standardima.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-text">
+                <h3>Ključ u Ruke</h3>
+                <p>Kompletna usluga od početka do kraja, predajemo vam ključ u ruke.</p>
+            </div>
+            <img src="slike/slika001.jpg" alt="Ključ u Ruke">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>O Nama</h2>
+        <p style="margin: 10%;">Mi smo građevinska tvrtka s više od 20 godina iskustva u pružanju vrhunskih građevinskih usluga. 
+            Naš stručni tim posvećen je kvaliteti i profesionalnosti na svakom koraku, od temelja do krova, 
+            koristeći samo najbolje materijale i najnovije tehnologije kako bismo ispunili očekivanja i stvorili 
+            trajnu vrijednost za naše klijente. Specijalizirani smo za sve vrste građevinskih radova, od roh-bau 
+            konstrukcija do završnih radova po sistemu ključ u ruke. Naše dugogodišnje iskustvo i pažljiv pristup 
+            svakom projektu omogućuju nam da kreiramo prostore koji traju. S povjerenjem nam se obratite za gradnju 
+            koja spaja funkcionalnost i estetiku.</p>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <h2>Kontakt Informacije</h2>
+        <p><strong>Adresa:</strong> trg J. Lembergera, Sveti Križ Začretje 49223, Krapinsko Zagorska županija</p>
+        <p><strong>Telefon:</strong> +385 91 228 5005</p>
+        <p><strong>Telefon:</strong> +385 91 228 5009</p>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="inquiry-form" id="contact">
+        <h2>Kontaktirajte nas za upit</h2>
+        <form id="inquiryForm" onsubmit="sendMail(); return false;">
+            <label for="name">Ime:</label>
+            <input type="text" id="name" name="name" required>
+
+         <!--   <label for="surname">Odaberite vrstu građevine:</label>
+            <select name="build" id="build">
+                <option value="home">Obiteljska kuća</option>
+                <option value="build1">Stambena zgrada/Apartmani</option>
+                <option value="build2">Poslovna zgrada</option>
+                
+              </select>
+-->
+            <label for="message">Poruka:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* Main Color Scheme */
+:root {
+    --main-blue: #2a4d8f;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container for Max Width */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--main-blue);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.company-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ffce00;
+}
+
+/* Centered Text Sections */
+.carousel, .features, .about, .contact-info, .inquiry-form {
+    text-align: center;
+}
+
+/* Carousel Section */
+.carousel-images img {
+    width: 80%;
+    height: auto;
+    max-height: 50%;
+    margin-left: 10%;
+}
+
+/* Feature Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.feature {
+    flex: 1;
+    max-width: 300px;
+    margin: 1rem;
+}
+.features img{
+    width: 100%;
+}
+/* Services Section */
+.services {
+    padding: 2rem 0;
+}
+
+.services img{
+    width: 100%;
+}
+
+.services h2{
+    text-align: center;
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.service-item img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.service-text {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.service-item.reverse .service-text {
+    order: 1;
+}
+
+/* Contact Info */
+.contact-info {
+    padding: 2rem;
+    color: var(--main-blue);
+}
+
+/* Inquiry Form */
+.inquiry-form {
+    padding: 2rem;
+    border: 1px solid var(--main-blue);
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.inquiry-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.inquiry-form input, .inquiry-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+}
+
+.inquiry-form button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .service-item {
+        flex-direction: column;
+    }
+    .service-item.reverse .service-text {
+        order: 0;
+    }
+}
